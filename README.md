@@ -24,6 +24,8 @@ This project is based on publicly available human targeted sequencing datasets u
 Raw sequencing data files are not included in this repository due to size and privacy considerations.
 
 ## Pipeline Overview
+![End-to-End Targeted NGS Workflow](workflow/targeted_ngs_pipeline_flow.png)
+The diagram illustrates the SOP-style flow of a targeted clinical NGS analysis pipeline from raw FASTQ files to a final variant table.
 
 The targeted NGS analysis pipeline implemented in this project follows a standard clinical-style workflow designed for tumor-only variant detection.
 
