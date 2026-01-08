@@ -3,6 +3,10 @@
 ## Overview
 This repository contains a step-by-step implementation of a targeted DNA sequencing data analysis pipeline, starting from raw FASTQ files to annotated variants.
 
+## Project Summary
+
+This project demonstrates an end-to-end targeted clinical NGS data analysis workflow implemented as a documentation-first learning exercise. The pipeline follows SOP-style logic commonly used in somatic cancer testing laboratories, covering raw data quality control, read preprocessing, alignment, post-alignment processing, variant calling, annotation, clinical-style filtering, and final variant table generation. The project emphasizes workflow structure, quality control checkpoints, and responsible interpretation boundaries rather than automated clinical reporting.
+
 ## Disclaimer
 This repository is intended for educational and skill-development purposes only.  
 The pipeline and scripts demonstrated here are not validated for clinical diagnostics and should not be used for patient-related decision making.
