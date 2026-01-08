@@ -81,4 +81,30 @@ The following open-source bioinformatics tools are used throughout the targeted 
 
 All tools listed are widely used in research and clinical genomics laboratories.
 
+## Variant Interpretation
+
+Variant interpretation is performed as a manual review step and is not fully automated in this project.
+
+Filtered variants are reviewed using publicly available knowledge bases and literature to assess their potential clinical relevance. Variants are broadly categorized into:
+
+- Pathogenic
+- Likely Pathogenic
+- Variant of Uncertain Significance (VUS)
+- Benign / Likely Benign
+
+Databases commonly referenced during interpretation include ClinVar, COSMIC, OncoKB, and relevant scientific literature.
+
+## Limitations
+
+This project is implemented as a learning and training exercise and has several limitations:
+
+- Tumor-only analysis without a matched normal sample
+- No copy number variation (CNV) or structural variant analysis
+- Annotation limited to selected tools and databases
+- Filtering thresholds are representative but may vary across laboratories
+- The pipeline is not validated for clinical diagnostics
+
+These limitations are acknowledged to ensure responsible and accurate representation of the project scope.
+
+
 
