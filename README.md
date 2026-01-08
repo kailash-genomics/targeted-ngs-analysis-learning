@@ -64,4 +64,21 @@ The targeted NGS analysis pipeline implemented in this project follows a standar
 10. **Variant Interpretation (Manual)**
     - Interpretation using public knowledge bases and literature
     - Classification into pathogenic, likely pathogenic, VUS, or benign categories
+   
+## Tools Used
+
+The following open-source bioinformatics tools are used throughout the targeted NGS analysis pipeline:
+
+- **FastQC** – Quality assessment of raw sequencing reads  
+- **fastp** – Adapter trimming and quality filtering  
+- **BWA-MEM** – Alignment of reads to the human reference genome  
+- **SAMtools** – BAM file manipulation, sorting, indexing, and QC  
+- **Picard** – Read group assignment and duplicate marking  
+- **GATK (Mutect2)** – Somatic variant calling in tumor-only mode  
+- **bcftools** – Variant filtering, normalization, and querying  
+- **snpEff** – Functional annotation of genetic variants  
+- **IGV** – Visualization of aligned reads and variants (manual review)
+
+All tools listed are widely used in research and clinical genomics laboratories.
+
 
