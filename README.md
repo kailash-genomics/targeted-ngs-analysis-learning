@@ -4,6 +4,9 @@
 This repository contains a step-by-step implementation of a targeted DNA sequencing data analysis pipeline, starting from raw FASTQ files to annotated variants.
 
 ## Disclaimer
+This repository is intended for educational and skill-development purposes only.  
+The pipeline and scripts demonstrated here are not validated for clinical diagnostics and should not be used for patient-related decision making.
+
 ## Dataset
 
 This project is based on publicly available human targeted sequencing datasets used for training and learning purposes.
