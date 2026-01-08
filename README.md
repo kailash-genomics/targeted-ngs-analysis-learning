@@ -24,8 +24,23 @@ This project is based on publicly available human targeted sequencing datasets u
 Raw sequencing data files are not included in this repository due to size and privacy considerations.
 
 ## Pipeline Overview
-![End-to-End Targeted NGS Workflow](workflow/targeted_ngs_pipeline_flow.png)
-The diagram illustrates the SOP-style flow of a targeted clinical NGS analysis pipeline from raw FASTQ files to a final variant table.
+## Pipeline Workflow Summary
+
+| Phase | Step | Description | Tools |
+|------|------|------------|-------|
+| Pre-processing | Raw data QC | Assessment of sequencing read quality | FastQC |
+| Pre-processing | Read trimming | Adapter removal and quality filtering | fastp |
+| Alignment | Read alignment | Mapping reads to human reference genome | BWA-MEM |
+| BAM Processing | Post-alignment processing | SAM to BAM conversion, sorting, indexing | SAMtools |
+| BAM Processing | Read groups | Add read group information | Picard |
+| BAM Processing | Duplicate marking | Identify PCR duplicates | Picard |
+| QC | BAM QC & coverage | Alignment metrics and target coverage | SAMtools |
+| Variant Calling | Somatic calling | Tumor-only variant calling | GATK Mutect2 |
+| Variant Processing | Variant filtering | Remove low-confidence variants | GATK, bcftools |
+| Annotation | Functional annotation | Gene and effect annotation | snpEff |
+| Clinical Filtering | Clinical thresholds | Apply DP, AF, PASS, panel BED filters | bcftools |
+| Reporting | Final output | Generate variant table for review | bcftools |
+
 
 The targeted NGS analysis pipeline implemented in this project follows a standard clinical-style workflow designed for tumor-only variant detection.
 
